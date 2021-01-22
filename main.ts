@@ -116,7 +116,7 @@ commandGroup.subcommand('e', (subCommandGroup) => {
     subCommandGroup.on(
       {
         name: 'update',
-        filters: discord.command.filters.hasAdministrator
+        filters: discord.command.filters.isAdministrator()
       },
       (ctx) => ({
         user: ctx.guildMember(),
@@ -133,7 +133,7 @@ commandGroup.subcommand('e', (subCommandGroup) => {
     subCommandGroup.on(
       {
         name: 'wallet',
-        filters: discord.command.filters.hasAdministrator
+        filters: discord.command.filters.isAdministrator()
       },
       (ctx) => ({
         user: ctx.guildMember()
