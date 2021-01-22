@@ -1,4 +1,4 @@
-const GuyCoin = new discord.command.CommandGroup({
+const economy = new discord.command.CommandGroup({
   defaultPrefix: '!'
 });
 
@@ -19,8 +19,7 @@ async function incrementPts(key: string, by: number = 1): Promise<number> {
   return nextValue!;
 }
 
-
-commandGroup.subcommand('e', (subCommandGroup) => {
+economy.subcommand('e', (subCommandGroup) => {
   subCommandGroup.raw('wallet', async (message) => {
     // get wallet data
     var points = await kv.get<number>(message.member.user.id);
@@ -57,7 +56,8 @@ commandGroup.subcommand('e', (subCommandGroup) => {
     });
     economyHelpEmbed.addField({
       name: 'Voting',
-      value:             // IMPORTANT: ADD YOUR OWN EMOJIS VALUES HERE HERE!
+      // IMPORTANT: ADD YOUR OWN EMOJIS VALUES HERE HERE!
+      value:
         'Upvote using the <:upvote:emoji_id> upvote emoji someone else if they said something funny or particularly noteworthy. You can also downvote with <:downvote:emoji_id> if someone said something you did not like!'
     });
 
@@ -144,7 +144,7 @@ commandGroup.subcommand('e', (subCommandGroup) => {
           await kv.put(user.user.id, 0);
         }
         await message.reply(
-          `${user.toMention()} currently has ${currentUserGc} points.`
+          `${user.toMention()} currently has ${currentUserPts} points.`
         );
       }
     );
