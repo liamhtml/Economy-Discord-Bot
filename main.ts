@@ -115,7 +115,7 @@ economy.subcommand('e', (subCommandGroup) => {
   subCommandGroup.subcommand('admin', (subCommandGroup) => {
     subCommandGroup.on(
       {
-        name: 'update',
+        name: 'edit',
         filters: discord.command.filters.isAdministrator()
       },
       (ctx) => ({
