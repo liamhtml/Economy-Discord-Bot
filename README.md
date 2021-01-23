@@ -1,4 +1,4 @@
-# Economy-Discord-Bot-Pylon
+# Economy-Discord-Bot
 A basic economy system for Discord built with [Pylon.bot](https://pylon.bot)
 ## Setup
 Just copy and paste the code into your [Pylon editor](https://pylon.bot/studio) and change a few things to fit your server.
