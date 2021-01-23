@@ -34,4 +34,4 @@ Allows you to add or remove points from any user's account. Example: If a user h
 <br>
 Syntax: `!e admin edit @user <amount | number>`
 ## Credit
-This project was a collaboration with [Cutard](https://github.com/cutard), go check out his stuff and follow him!
+This project was a collaboration with [TheOkayGuy](https://www.youtube.com/channel/UCtdzdofrVMY_BngbnEDnzrA), go check out his stuff and sub!
