@@ -33,5 +33,7 @@ Syntax: `!e admin wallet @user`
 Allows you to add or remove points from any user's account. Example: If a user has 10 points and `!e admin edit @sameuser 5` is used, their point balance will be increased to 15 (10 + 5 = 15). If the number defined is negative the user will lose points in the same way.
 <br>
 Syntax: `!e admin edit @user <amount | number>`
+## Support 
+Visit the [support server](https://discord.gg/U4xC8ZP8QS) for any help or questions!
 ## Credit
 This project was a collaboration with [TheOkayGuy](https://www.youtube.com/channel/UCtdzdofrVMY_BngbnEDnzrA), go check out his stuff and sub!
