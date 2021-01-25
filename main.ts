@@ -55,6 +55,10 @@ economy.subcommand('e', (subCommandGroup) => {
       value: 'Use this to reset all of your points. *`!e reset`*'
     });
     economyHelpEmbed.addField({
+      name: '!e support',
+      value: 'Get the link to the support server. *`!e support`*'
+    })
+    economyHelpEmbed.addField({
       name: 'Voting',
       // IMPORTANT: ADD YOUR OWN EMOJIS VALUES HERE HERE!
       value:
@@ -109,6 +113,12 @@ economy.subcommand('e', (subCommandGroup) => {
   subCommandGroup.raw('confirm', async (message) => {
     await kv.put(message.member.user.id, 0);
     await message.reply('Point balance successfully reset.');
+  });
+  
+  subCommandGroup.raw('support', async (message) => {
+    await message.reply(
+      'Support server: \n https://discord.gg/U4xC8ZP8QS'
+    );
   });
 
   // Admin only commands
