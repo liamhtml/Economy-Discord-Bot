@@ -24,7 +24,7 @@ economy.subcommand('e', (subCommandGroup) => {
     // get wallet data
     var points = await kv.get<number>(message.member.user.id);
     // if wallet value is null (new player) set it to 0
-    if (points == null) {
+    if (points == null || points == undefined) {
       await kv.put(message.member.user.id, 0);
       // check wallet again
       points = await kv.get<number>(message.member.user.id);
@@ -140,7 +140,7 @@ economy.subcommand('e', (subCommandGroup) => {
       }),
       async (message, { user }) => {
         var currentUserPts = await kv.get<number>(user.user.id);
-        if (currentUserPts == null || undefined) {
+        if (currentUserPts == null || currentUserPts == undefined) {
           await kv.put(user.user.id, 0);
         }
         await message.reply(
