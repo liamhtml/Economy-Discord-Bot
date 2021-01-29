@@ -29,7 +29,7 @@ Syntax: `!e reset`
 Allows you to check the wallet of any users.
 <br>
 Syntax: `!e admin wallet @user`
-##### !e admin update
+##### !e admin edit
 Allows you to add or remove points from any user's account. Example: If a user has 10 points and `!e admin edit @sameuser 5` is used, their point balance will be increased to 15 (10 + 5 = 15). If the number defined is negative the user will lose points in the same way.
 <br>
 Syntax: `!e admin edit @user <amount | number>`
