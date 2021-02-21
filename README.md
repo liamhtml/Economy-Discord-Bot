@@ -8,7 +8,7 @@ A basic economy system for Discord built with [Pylon.bot](https://pylon.bot)
  - Line 155: Replace this text with the ID of an "downvote" emoji of your choosing! To figure out the ID type `\:emoji:`. The ID should come after `:emoji:` and before `>`. It will be a long number like `811314799676751884`.
  > Note: Currently this bot only supports the use of custom emojis, not default Discord ones. If you don't have any you can use these: [upvote](https://github.com/liamhtml/Economy-Discord-Bot/blob/main/upvote.png), [downvote](https://github.com/liamhtml/Economy-Discord-Bot/blob/main/downvote.png).
 ## About
-With this bot, users gain or lose points when their messages are reacted to with upvote or downvote emojis by other users! Users can reset all of their points, or transfer them to another user's account! There are lots of possibilities for what to do with this bot! You could sell cat pictures to your friends, or just use it as a reddit-esque karma system!
+With this bot, users gain or lose points when their messages are reacted to with upvote or downvote emojis by other users! Users can reset all of their points, or transfer them to another user's account! There are lots of possibilities for what to do with this bot! You could sell dog pictures to your friends, or just use it as a reddit-esque karma system!
 ## Commands
 ### Public
 ##### !e wallet
@@ -38,4 +38,5 @@ Syntax: `!e admin edit @user <amount | number>`
 ## Support 
 Visit the [support server](https://discord.gg/U4xC8ZP8QS) for any help or questions!
 ## Credit
-This project was a collaboration with [TheOkayGuy](https://www.youtube.com/channel/UCtdzdofrVMY_BngbnEDnzrA), go check out his stuff and sub!
+ - This project was a collaboration with [TheOkayGuy](https://www.youtube.com/channel/UCtdzdofrVMY_BngbnEDnzrA), go check out his stuff and sub!
+ - Huge thanks to the helpful people on the Pylon Support Server!
